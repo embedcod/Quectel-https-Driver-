@@ -272,8 +272,7 @@ void gsm_comm_task() {
 		char postRequest[BUF_SIZE];        	                  
 		snprintf(postRequest, BUF_SIZE,
 		         "%s"
-		         //"Host: thingsboard.cloud\r\n"
-		         "Host: things.geviton.co.ke\r\n"
+		         "Host: thingsboard.cloud\r\n"
 		         "Content-Type: application/json\r\n"
 		         "Content-Length: %d\r\n\r\n%s",
 		         postHeader, (int)strlen(jsonPayload), jsonPayload);     
